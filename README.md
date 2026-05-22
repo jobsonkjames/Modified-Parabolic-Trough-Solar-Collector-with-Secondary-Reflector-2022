@@ -40,52 +40,75 @@ Led as part of a 4-member team under the supervision of Dr. Baiju V., Assistant 
  
 ## Simulation Gallery
  
-## Secondary Reflector Geometries
+## Simulation, Experimental Validation & ML Analysis
 
-![Secondary Reflector Geometries](Reflector_models.png)
+### Secondary Reflector Geometry Development
 
-Systematic SolidWorks modelling of 14 candidate secondary reflector geometries ranging from simple strip approximations to near-parabolic profiles.
+<img src="Reflector_models.png" width="900">
 
----
-
-## Tonatiuh Monte Carlo Ray Tracing
-
-![Tonatiuh Ray Tracing](Ray_tracing_simulations.png)
-
-Monte Carlo ray tracing simulations performed using 2 million rays per configuration to evaluate solar flux redistribution behaviour.
+Fourteen secondary reflector geometries were systematically designed in SolidWorks, ranging from simple 2-strip approximations to near-parabolic 100-strip configurations. The study evaluated how reflector geometry affects circumferential solar flux redistribution on the receiver tube while balancing manufacturability and optical performance.
 
 ---
 
-## Heat Flux Distribution Comparison
+### Monte Carlo Ray Tracing Simulation
 
-![Flux Distribution](Flux_distributions.png)
+<img src="Ray_tracing_simulations.png" width="900">
 
-Comparison of circumferential heat flux distribution across reflector geometries. The 6-strip 144° configuration produced the most uniform practical flux profile.
-
----
-## Machine Learning Analysis
-
-### Correlation Heatmap
-
-![Heatmap](Heatmap.png)
-
-Feature correlation analysis showing relationships between irradiance, ambient conditions, and thermal performance.
+Tonatiuh Monte Carlo ray tracing simulations were performed using 2 million rays per configuration to analyse optical behaviour across all reflector geometries. The simulations evaluated how effectively each design redirected solar radiation onto the upper receiver surface to reduce local hot spots and improve flux uniformity.
 
 ---
 
-### Pairplot Analysis
+### Heat Flux Distribution Analysis
 
-![Pairplot](pairplot.png)
+<img src="Flux_distributions.png" width="900">
 
-Pairplot analysis used for exploratory data analysis and feature relationship evaluation.
+Circumferential heat flux distributions were analysed for each reflector geometry. The optimised 6-strip 144° configuration produced the most uniform flux profile, significantly reducing concentrated local heat flux regions responsible for thermal stress and absorber tube deformation in conventional parabolic trough collectors.
 
 ---
 
-### ANN Model Results
+### Experimental Validation
 
-![ANN Results](ML_results.png)
+<img src="Experimental_PTC.png" width="850">
 
-Artificial Neural Network regression model performance for heat gain prediction using collected weather station data.
+The optimised secondary reflector geometry was fabricated and installed on the existing parabolic trough collector test rig at TKM College of Engineering. Outdoor experiments were conducted under real operating conditions using on-site weather station measurements including solar irradiance, ambient temperature, humidity, and wind velocity.
+
+---
+
+## Machine Learning Performance Modelling
+
+### Feature Correlation Heatmap
+
+<img src="Heatmap.png" width="700">
+
+Correlation analysis was performed on collected meteorological and thermal performance data. Direct normal irradiance and heat loss showed the strongest positive correlation, helping identify the dominant parameters affecting collector performance.
+
+---
+
+### Feature Distribution Pairplot
+
+<img src="pairplot.png" width="850">
+
+Pairplot analysis was used to visualise relationships between weather variables and thermal output parameters. This supported feature selection and preprocessing for machine learning model development.
+
+---
+
+### Regression Model Comparison
+
+<img src="ML_Models_1.png" width="850">
+
+Multiple regression algorithms including K-Nearest Neighbour, Random Forest, and Linear Regression were evaluated for heat gain prediction using meteorological inputs.
+
+<img src="ML_Models_2.png" width="650">
+
+Additional regression techniques including Ridge and Lasso regression were tested to compare prediction stability and model generalisation behaviour.
+
+---
+
+### ML Model Performance Results
+
+<img src="ML_results.png" width="750">
+
+Performance comparison across regression models showed Random Forest achieved the best overall prediction accuracy, with the highest R² score and lowest prediction error metrics among the evaluated models.
 
 ---
  
