@@ -40,11 +40,54 @@ Led as part of a 4-member team under the supervision of Dr. Baiju V., Assistant 
  
 ## Simulation Gallery
  
-![Tonatiuh ray tracing](docs/ray_tracing.png)
-*Ray tracing visualisations across 14 secondary reflector geometries*
- 
-![Heat flux distribution](docs/flux_distribution.png)
-*Heat flux distribution comparison: conventional PTC vs modified with secondary reflector*
+## Secondary Reflector Geometries
+
+![Secondary Reflector Geometries](Reflector_models.png)
+
+Systematic SolidWorks modelling of 14 candidate secondary reflector geometries ranging from simple strip approximations to near-parabolic profiles.
+
+---
+
+## Tonatiuh Monte Carlo Ray Tracing
+
+![Tonatiuh Ray Tracing](Ray_tracing_simulations.png)
+
+Monte Carlo ray tracing simulations performed using 2 million rays per configuration to evaluate solar flux redistribution behaviour.
+
+---
+
+## Heat Flux Distribution Comparison
+
+![Flux Distribution](Flux_distributions.png)
+
+Comparison of circumferential heat flux distribution across reflector geometries. The 6-strip 144° configuration produced the most uniform practical flux profile.
+
+---
+## Machine Learning Analysis
+
+### Correlation Heatmap
+
+![Heatmap](Heatmap.png)
+
+Feature correlation analysis showing relationships between irradiance, ambient conditions, and thermal performance.
+
+---
+
+### Pairplot Analysis
+
+![Pairplot](pairplot.png)
+
+Pairplot analysis used for exploratory data analysis and feature relationship evaluation.
+
+---
+
+### ANN Model Results
+
+![ANN Results](ML_results.png)
+
+Artificial Neural Network regression model performance for heat gain prediction using collected weather station data.
+
+---
  
 ## Results
  
